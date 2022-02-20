@@ -1,5 +1,5 @@
 # cheat-codes
-Concise topics in data science
+Concise topics in data science. Each directory contains a cheatsheet for that topic.
 
 ### Contribution Instructions
 Below is how I've set up my IDE.
