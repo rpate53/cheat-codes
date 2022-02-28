@@ -212,5 +212,200 @@
         approach Y, and if you ever thought about trying out Z instead?"
     \end{itemize}
 
+    %Metrics for Product and Case Interviews
+    \titleformat{\section}
+        {\normalfont\fontfamily{phv}\fontsize{10}{0}\bfseries}{\thesection}{1em}{}
+    \section{Metrics to use}
+    \renewcommand\labelitemi{{\boldmath$\cdot$}}
+    \begin{itemize}[noitemsep]
+        \item \textbf{A}cquisition metrics
+        \begin{itemize}
+            \item How are people finding out about my product?
+            \item new user counts 
+            \item sign-up conversion rates 
+            \item customer acquisition costs (CAC)
+        \end{itemize}
+        \item \textbf{A}ctivation metrics 
+        \begin{itemize}
+            \item Do users have a great first experience
+            \item number of people who make first delivery order
+            \item number of users who view more than 10 unique posts
+        \end{itemize}
+        \item User Engagement
+        \begin{itemize}
+            \item Count unique number of users who took a core action
+            \item DAU (Daily Active Users)
+            \item WAU (Weekly Active Users)
+            \item MAU (Monthly Active Users)
+        \end{itemize}
+        \item \textbf{Retention} metrics
+        \begin{itemize}
+            \item Do users come back?
+            \item Churn - when users join and then leave permanently
+            \item Maximize retention and minimize churn
+            \item It's a lot more expensive to find a new customer than 
+            retain an existing customer.
+            \item Monthly retention
+            \item Monthly churn
+        \end{itemize}
+        \item \textbf{Referral}
+        \begin{itemize}
+            \item Where a user shares a product with others
+            \item k-factor = of the number of referrals, how many converted.
+            Want a k-factor $>$ 1.
+        \end{itemize}
+        \item \textbf{Revenue}
+        \begin{itemize}
+            \item Lifetime value per customer (LTV) - amount 
+            of money a customer brings into business before 
+            they churn.
+            \item Number of paid memberships.
+            \item Revenue from ad impressions.
+            \item Initially shouldn't be primary focus. But a 
+            byproduct of a nailing product-market-fit (i.e. users 
+            are not going click on ads if Facebook is not great 
+            at making connections)
+        \end{itemize}
+    \end{itemize}
+
+    % What makes a metric good or bad?
+    \titleformat{\section}
+        {\normalfont\fontfamily{phv}\fontsize{10}{0}\bfseries}{\thesection}{1em}{}
+    \section{What makes a metric good or bad}
+    \renewcommand\labelitemi{{\boldmath$\cdot$}}
+    \begin{itemize}[noitemsep]
+        \item Data Scientists help Product Managers define apporpriate
+        metrics
+        \item Have the end result in mind before building a product
+        \item \textbf{Examples of bad metrics}
+        \begin{itemize}
+            \item Vanity Metrics: The number of dating profiles viewed
+            \item Irrelevant Metrics: Time spent using Facebook Dating.
+            This metric is better for media consumption products like 
+            YoutTube and Netflix, not activity-driven dating apps.
+            \item Impractical Metrics: The number of 3rd dates that occured.
+            More advanced dating apps have a "did you meet?" user 
+            prompt or they use NLP on the conversation to determine 
+            if they think you met, but this likely works only for a
+            first date, after which the conversation moves off-app.
+            \item Complicated Metrics: Is the metric easy to explain to 
+            stakeholders?
+            \item Delayed Metrics: Number of marriages that occurred. This is 
+            impractical to know but would take a long time to figure out.
+        \end{itemize}
+        \item \textbf{Examples of good metrics}
+        \begin{itemize}
+            \item Meaningful: Tied to business goals
+            \item Measurable: Simple to reliably track
+            \item Understandable: Easy for stakeholders to understand.
+            \item Timely: Can be collected with in a timeframe.
+        \end{itemize}
+        \item Important to define guardrail metrics. These are metrics 
+        which shouldn't degrade as you're boosting the primary metric 
+        (i.e. metric is to reduce the number of harmful posts but 
+        don't want to remove everything. Still need to monitor 
+        posts made, posts viewed, numbre of likes/comments)
+    \end{itemize}
+
+    %Product Metric Definition Question Strategy
+    \titleformat{\section}
+        {\normalfont\fontfamily{phv}\fontsize{10}{0}\bfseries}{\thesection}{1em}{}
+    \section{Product Metric Question Strategy}
+    \renewcommand\labelitemi{{\boldmath$\cdot$}}
+    \begin{itemize}[noitemsep]
+        \item 1. Clarify the product and its purpose
+        \item 2. Explain the product and business goals. Tie it 
+        back to the company's mission
+        \item 3. Define Success metrics
+    \end{itemize}
+
+    %4-Step Framework for Diagnosing Metric Changes
+    \titleformat{\section}
+        {\normalfont\fontfamily{phv}\fontsize{10}{0}\bfseries}{\thesection}{1em}{}
+    \section{Product Metric Question Strategy}
+    \renewcommand\labelitemi{{\boldmath$\cdot$}}
+    \begin{itemize}[noitemsep]
+        \item 1. Scope Out the Metric Change
+        \begin{itemize}
+            \item Did numerator or denominator change?
+            \item Is the change important?
+            \item How often does it change?
+            \item How big of a change is it?
+        \end{itemize}
+        \item 2. Hypothesize Contributing factors
+        \begin{itemize}
+            \item Accidental Changes
+            \item Natural Change (seaonality, holidays, ...)
+            \item Internal Changes (bug fixes, new features, ...)
+            \item External Changes (Competitors launching new products, 
+            pandemic, recession, ...)
+        \end{itemize}
+        \item 3. Validate Each factor
+        \item 4. Classify Each factor
+        \begin{itemize}
+            \item Root cause: of the change 
+            \item Contributing factor: not root cause but a factor
+            \item Correlated result: symptom of root cause but not a factor 
+            \item Unrelated factor: unrelated to metric change 
+            \item Example: Why are comments per Instagram posts declining?
+            Cohort Analysis $->$ Affecting Only New Posts $->$ PM reveals 
+            new feature added giving users option to turn off comments 
+            on post $->$ Remove these posts $->$ No change in comments per post $->$
+            Root cause discovered!
+        \end{itemize}
+    \end{itemize}
+
+    %A/B Testing and Experimental Design
+    \titleformat{\section}
+        {\normalfont\fontfamily{phv}\fontsize{10}{0}\bfseries}{\thesection}{1em}{}
+    \section{A/B Testing and Experimental Design}
+    \renewcommand\labelitemi{{\boldmath$\cdot$}}
+    \begin{itemize}[noitemsep]
+        \item 1. Pick a Metric to Test 
+        \item 2. Define Thresholds
+        \begin{itemize}
+            \item Set $\alpha$
+            \item Set $power = 1-\beta$
+        \end{itemize}
+        \item 3. Pick a sample size and experiment length
+        (i.e. typical to run test for at least two weeks)
+        \item 4. Assign Groups
+        \begin{itemize}
+            \item Make sure we randomize groups to avoid 
+            confouding variables down the line 
+        \end{itemize}
+        \item When Not to A/B Test 
+        \begin{itemize}
+            \item Lack of infrastructure
+            \item Lack of impact 
+            \item Lack of traffic
+            \item Lack of conviction
+            \item Lack of isolation
+        \end{itemize}
+        \item Dealing with Non-Normality
+        \begin{itemize}
+            \item Bootstrapping
+            \item Run alternate tests 
+            \item Gathering more data
+        \end{itemize}
+        \item Dealing with multiple tests simultaneously. If you 
+        run 100 A/B tests, you will have some succeed. Why? 
+        How do you solve it?
+        \begin{itemize}
+            \item Bonferonni Correction - adjust for the 
+            significance level required based on the total 
+            number of tests running. $\frac{\alpha}{num \: tests}$
+            \item FDR - false discovery rate. $\frac{FP}{TP+FP}$. 
+            The rate of Type I errors.
+            \item Dig into the experiment and see if anything 
+            could have impacted the primary experiment.
+        \end{itemize}
+        \item Dealing with Network Effects - interferance between the 
+        control and treatment groups (i.e. Facebook Live)
+        \item Dealing with Novelty Effects - Social Media/PR 
+        hypes up a feature and skews metrics
+        \item Nuances: how does A/B test effect the guardrail metrics
+        \item Launch with A/B Test Holdouts - easy to compare live
+    \end{itemize}
 \end{multicols*}
 \end{document}

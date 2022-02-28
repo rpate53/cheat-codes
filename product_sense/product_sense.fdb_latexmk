@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1645581102 "c:/Users/Riten/Documents/Software/cheat-codes/product_sense/product_sense.tex" "product_sense.pdf" "product_sense" 1645581207
+["pdflatex"] 1646009096 "c:/Users/Riten/Documents/Software/cheat-codes/product_sense/product_sense.tex" "product_sense.pdf" "product_sense" 1646009098
   "C:/Users/Riten/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1635704679 9726368 403ae8e8b641a42b8db9cdee88a11663 ""
   "C:/Users/Riten/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1636641739 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/Riten/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458470287 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -23,8 +23,11 @@
   "C:/Users/Riten/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmib10.tfm" 1136765053 1524 554068197b70979a55370e6c6495f441 ""
   "C:/Users/Riten/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbsy10.pfb" 1247593066 34793 ae7a3e2775dc0ce90475eeabcb46f9f1 ""
   "C:/Users/Riten/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1247593066 34811 78b52f49e893bcba91bd7581cdc144c0 ""
+  "C:/Users/Riten/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247593067 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "C:/Users/Riten/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1247593067 36281 c355509802a035cadc5f15869451dcee ""
   "C:/Users/Riten/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247593067 35752 024fb6c41858982481f6968b5fc26508 ""
   "C:/Users/Riten/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1247593067 32762 7fee39e011c23b3589931effd97b9702 ""
+  "C:/Users/Riten/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247593067 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Users/Riten/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb" 1136871348 35941 adef23a721dd8354a4a2bf4434f1c484 ""
   "C:/Users/Riten/AppData/Local/Programs/MiKTeX/fonts/vf/adobe/helvetic/phvb7t.vf" 1136790254 1372 1c26b449eb4a1a0bcf6ac7cfe376d450 ""
   "C:/Users/Riten/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -72,10 +75,10 @@
   "C:/Users/Riten/AppData/Local/Programs/MiKTeX/tex/latex/tools/multicol.sty" 1622546726 31530 f9ba11d1c179e918d577463ebdb887ca ""
   "C:/Users/Riten/AppData/Local/Programs/MiKTeX/tex/latex/tools/tabularx.sty" 1622546726 7147 5ac8a9ef36411064b1a501137af0fa54 ""
   "C:/Users/Riten/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1623002060 55589 34128738f682d033422ca125f82e5d62 ""
-  "c:/Users/Riten/Documents/Software/cheat-codes/product_sense/product_sense.tex" 1645581207 8067 9d18bea3425e46ad418c144863ab8687 ""
-  "product_sense.aux" 1645581103 712 af8b08cfcafcfeb57cb33f957548132a "pdflatex"
-  "product_sense.tex" 1645581207 8067 9d18bea3425e46ad418c144863ab8687 ""
+  "c:/Users/Riten/Documents/Software/cheat-codes/product_sense/product_sense.tex" 1646009095 17119 ad6af5c2702eabe0d456ccdddd08b045 ""
+  "product_sense.aux" 1646009098 1297 bf953fa34cd6650696768e625eee5005 "pdflatex"
+  "product_sense.tex" 1646009095 17119 ad6af5c2702eabe0d456ccdddd08b045 ""
   (generated)
+  "product_sense.log"
   "product_sense.aux"
   "product_sense.pdf"
-  "product_sense.log"
