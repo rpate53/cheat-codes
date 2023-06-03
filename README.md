@@ -8,5 +8,3 @@ Below is how I've set up my IDE.
 3. Install the below extensions so you can compile LaTeX in Visual Studio Code.  
 A. LaTeX Workshop  
 B. LaTeX Utilities  
-
-Testing
