@@ -1,0 +1,81 @@
+\documentclass{article}
+\usepackage{bm,sectsty,fancyhdr,multicol,lastpage}
+\usepackage{amsmath,enumitem,tabularx,textcomp,nccmath,amssymb}
+\usepackage{listings} % Insert bullet points
+\usepackage[a4paper,left=1cm,right=1cm,top=2cm,bottom=2cm,headsep=0.5cm]{geometry}
+\usepackage{xcolor} % Format color in code cells
+\usepackage{titlesec} % Format title section
+\usepackage{graphicx} % Embed images
+\usepackage[document]{ragged2e} % Fix uneven spacing caused in multi col mode
+
+% Define Colors
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codeorange}{rgb}{1,0.49,0}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.96}
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegray},
+    keywordstyle=\color{codeorange},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codegreen},
+    %basicstyle=\ttfamily\footnotesize,
+    basicstyle=\tiny,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2,
+    xleftmargin=0pt,
+    language=Python,
+    label={lst:code},
+    mathescape=true,
+    gobble=20
+}
+\lstset{style=mystyle}
+
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Deep Learning Cheatsheet}
+\fancyfoot[R]{Riten Patel}
+\fancyfoot[L]{\LaTeX}
+\fancyfoot[C]{\thepage\ of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{1.4pt}
+\renewcommand{\footrulewidth}{1.4pt}
+
+% Configurations
+\sectionfont{\large}
+\setlength{\columnsep}{0.5cm}
+\setlength{\columnseprule}{1.4pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{-6pt}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\setlist[itemize]{nolistsep,left=0pt}
+%\graphicspath{{./images/}}
+\tolerance=9999
+\emergencystretch=10pt
+\hyphenpenalty=10000
+\exhyphenpenalty=100
+
+\begin{document}
+\begin{multicols*}{2}
+
+    \raggedcolumns
+    % 1. Neural Networks and Deep Learning
+    \input{sections/1_intro_to_deep_learning.tex}
+    % 2. Improving Deep Neural Networks: Hyperparameter Tuning, Regularization, and Optimization'
+    \input{sections/2_improving_deep_neural_networks.tex}
+    % 3. Structuring Maching Learning Projects
+    \input{sections/3_structuring_ml_projects.tex}
+    % 4. Convolutional Neural Networks
+    \input{sections/4_convolutional_neural_networks.tex}
+    
+\end{multicols*}
+\end{document}

@@ -1,0 +1,123 @@
+\graphicspath{{./images/}}
+\titleformat{\section}
+    {\normalfont\fontfamily{phv}\fontsize{10}{0}\bfseries}{\thesection}{1em}{}
+    \section{Intro to Deep Learning}
+\renewcommand\labelitemi{{\boldmath$\cdot$}}
+\setlist{nolistsep}
+\begin{itemize}[noitemsep]
+    \item Simple Neural Network
+    
+    \includegraphics[height=0.5\linewidth]{1_simple_nn}
+    \item Supervised Learning Use Cases
+        \begin{center}
+            \scalebox{0.7}{
+                \tabcolsep=0.2cm \begin{tabular}{||l l l||}
+            \hline
+            Input(x) & Output(y) & Application  \\ [0.5ex]
+            \hline\hline
+            Home features & Price & Real Estate \\
+            \hline
+            Ad, user info & Click on ad? (0/1) & Online Advertising \\
+            \hline
+            Image & Object (1,...,1000) & Photo Tagging \\
+            \hline
+            Audio & Text transcript & Speech recognition \\
+            \hline
+            English & Chinese & Machine Translation \\
+            \hline
+            Image, Radar info & Position of other cars & Autonomous driving \\
+            \hline
+            \end{tabular}
+            }
+        \end{center}
+    \item Scale drives deep learning progress
+        \begin{itemize}[noitemsep]
+            \item Data
+            \item Computation
+            \item Algorithms (i.e. Sigmoid vs. reLU)
+        \end{itemize}
+    \item Binary Classification
+    
+    \includegraphics[height=0.5\linewidth]{3_logistic_notation}
+    \item Logistic Regression
+    \begin{itemize}
+        \item $\hat{y}=\sigma(w^Tx+b)$, where $\sigma(z)=\frac{1}{1+e^-z}$
+        \item Loss: $\mathcal{L}(\hat{y},y) = -(ylog\hat{y} + (1-y)log(1-\hat{y}))$
+        \item Cost: $J(w,b) = \frac{1}{m}\sum_{i=1}^{m}\mathcal{L}(\hat{y}^{(i)},y^{(i)})$
+    \end{itemize}
+    \item Gradient Descent
+    \begin{itemize}
+        \item Want to find $w,b$ that minimizes $J(w,b)$
+        
+        \includegraphics[height=0.5\linewidth]{gradient_descent}
+        \item Update parameters as follows:
+        \begin{itemize}
+            \item $w_i:=w_i-\alpha\frac{\partial J(w_i,b)}{\partial w_i}$
+            \item $b_i:=b_i-\alpha\frac{\partial J(w,b_i)}{\partial b_i}$
+        \end{itemize}
+        \vspace{4cm}
+        \item Computation graph to find derivatives
+    
+        \includegraphics[height=0.45\linewidth]{computation_graph_logistic.png}
+    \end{itemize}
+    \item Vectorization
+    \begin{itemize}
+        \item Whenever possible, avoid explicit for-loops
+        \item Vectorize examples by adding columns to matrices: $Z,X,A,b$
+        \item Can by-pass using a for-loop and take advantage of the SIMD paradigm.
+        \item SIMD: Single Instruction Multiple Data, a method for combining multiple operations into a single computer instruction
+        
+        \includegraphics[height=0.5\linewidth]{simd_graphic.jpg}
+        \item Why use GPUs over CPUs?
+        \begin{itemize}
+            \item Are optimized for parallel computing
+            \item Have thousands of cores 
+            \item Have multiple hyperthreads per core
+        \end{itemize}
+        \item Why use CPUs over GPUs?
+        \begin{itemize}
+            \item CPUs process data sequentially
+            \item They do not know what instruction will be next (i.e. input from keyboard, mouse, ...)
+            \item Has resources to manage an Operating System
+        \end{itemize}
+    \end{itemize}
+    \item Activation functions
+        \begin{itemize}
+            \item Activation functions are needed in order for the model to learn non-linear decision boundaries
+            \item Four common activation functions. All are monotonic, continuous, and differentiable
+            \item Sigmoid: $(-\infty,+\infty) \rightarrow (0,1)$ \\
+            $f(x) = \frac{1}{1+e^{-x}}$ \\
+            \includegraphics[height=0.5\linewidth]{sigmoid_function} \\
+            \vspace{5cm}
+            \item Tanh: $(-\infty,+\infty) \rightarrow (-1,1)$ \\
+            $f(x) = \frac{e^x-e^{-x}}{e^x+e^{-x}}$ \\
+            \includegraphics[height=0.5\linewidth]{tanh_function} \\
+            \item ReLu: $(-\infty,+\infty) \rightarrow (0,+\infty)$ \\
+            $f(x) = max(0,x)$ \\
+            \includegraphics[height=0.5\linewidth]{relu_function} \\
+            \item Softmax: $(-\infty,+\infty) \rightarrow (0,1)$ \\
+            $f(x) = \frac{e^{z_i}}{\Sigma_{j=1}^Ke^{z_j}}$ \\
+            Softmax is most often used in the final output layer. 
+            The output layer has values between 0 and 1. The function transforms 
+            a bunch of numbers into a valid probability distribution. \\
+        \end{itemize}
+    \item Random initialization
+    \begin{itemize}
+        \item Initialize weights to random numbers. Do not initialize them to zero. When all weights are zero, the network has perfect symmetry, meaning every neuron updates identically (that is zero) during backpropagation, leading to no meaningful learning
+        \item Initialize bias to zero vector.
+        \begin{itemize}
+            \item do not initilize weights and bias to zeros
+            \item initializing to large random values doesn't work well. The last activiation outputs results very close to 0 or 1 and then incurs a very high loss.
+            \item initializing to small random values is best 
+            \item choose random weights from gaussian distribution to avoid being too close to the extremes (as in a uniform distribution). It is easier to find the slope in the center of the distribution
+            \item He initialization works well for networks with ReLU activations (see 2. Optimization)
+        \end{itemize}
+    \end{itemize}
+    \item Matrix dimensions
+    \begin{itemize}
+        \item $W^{[l]}: (n^{[l]},n^{[l-1]})$
+        \item $b^{[l]}: (n^{[l]},1)$
+    \end{itemize}
+    \item Hyperparameters: pre-set by the practitioner
+    \item Parameters: set by optimization
+\end{itemize}

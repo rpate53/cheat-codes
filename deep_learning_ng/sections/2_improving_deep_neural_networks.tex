@@ -1,0 +1,168 @@
+\graphicspath{{./images/}}
+\titleformat{\section}
+    {\normalfont\fontfamily{phv}\fontsize{9}{0}\bfseries}{\thesection}{1em}{}
+    \section{Hyperparameter tuning, regularization, and optimization}
+\renewcommand\labelitemi{{\boldmath$\cdot$}}
+\setlist{nolistsep}
+\begin{itemize}[noitemsep]
+    \item Train/dev/test sets 
+    \begin{itemize}
+        \item In the age of big data, it's fine if you don't comply with the rule of thumb of 70/30 (train/test split)
+        \item Make sure dev and test set come from same distribution
+        \item Not having a test set might be okay (only dev set)
+    \end{itemize}
+    \item Bias/Variance
+    \begin{itemize}
+        \item Bias - Variance used to assess how to best improve the model. You can assess them by examining the train/dev set errors and comparing them to the human (or bayes error).
+        \item High Bias - a non-complex model that underfits the training data. Create bigger network, train longer to lower it.
+        \item High Variance - a complex model that overfits the training data. Add more data and regularize to lower it.
+    \end{itemize}
+    \item Regularization
+    \begin{itemize}
+        \item Generally, the first step to fixing high variance. Adding more data isn't always possible.
+        \item 1. Frobenius Norm
+        \begin{itemize}
+            \item The Frobenius Norm penalty will penalize the weight matrices from being too large
+            \item Frobenius Norm: \\ $||w^{[l]}||^2_F=\Sigma_{i=1}^{n^{[l]}}\Sigma_{j=1}^{n^{[l-1]}}(w_{ij}^{[l]})^2$
+            \item $J(w,b) = \frac{1}{m}\Sigma_{i=1}^{m}L(\hat{y}^{(i)},y^{(i)})+\frac{\lambda}{2m}\Sigma_{l=1}^{L}||w^{[l]}||^{2}_F$
+            \item Weight decay - regularization technique that results in gradient descent shrinking the weights on every iteration
+            \item $\uparrow \lambda \Rightarrow \downarrow w^{[l]} \Rightarrow \downarrow z^{[l]} \Rightarrow$ every layer of the network is linear
+            
+            \includegraphics[height=0.4\linewidth]{regularization_tanh}
+
+        \end{itemize}
+        \item 2. Dropout
+        \begin{itemize}
+            \item Randomly shutting down neurons in each iteration - mostly applied in computer vision problems
+            \item Inverted dropout - divide the activations by the keep probability to ensure the result of the cost will have the same expected value without drop-out.
+            \item It works by spreading out the weights and preventing reliance on any one feature.
+            \item Dropout is only used in training.
+            \item Dropout is applied during forward and backward propagation
+        \end{itemize}
+        \item 3. Data augmentation
+        \begin{itemize}
+            \item An inexpensive way of generating more data to reduce overfitting (i.e. invert, distort, crop, .... to images)
+        \end{itemize}
+        \item 4. Early stopping
+        \begin{itemize}
+            \item Stop training a neural network once the dev set error starts to increase.
+            
+            \includegraphics[height=0.5\linewidth]{early_stopping}
+            \item Con: not using orthogonalization which de-couples (1) optimizing the cost function and (2) not overfitting the model
+        \end{itemize}
+    \end{itemize}
+    \item Optimization
+    \begin{itemize}
+        \item Normalization
+        \begin{itemize}
+            \item Technique of putting all values on the same scale. Generally by taking the input, subtracting the mean, and dividing by the standard deviation.
+            \item Cost function will be more round and faster to optimize
+            
+            \includegraphics[height=0.2\linewidth]{normalization}
+        \end{itemize}
+        \item Vanishing/Exploding Gradients
+        \begin{itemize}
+            \item When parameters are all slightly larger than one $->$ Exploding Gradient
+            \item When parameters are all slightly smaller than one $->$ Vanishing Gradient
+            \item Common in deep networks - both will prevent the model from converging to the optimal set of parameters
+            \item Xavier initialization solution - initialize the weight matrix of each layer such that its variance is $1/n$ where $n$ is the number of input features. \\
+            Relu: $\sqrt{\frac{2}{n^{[l-1]}}}$ \\
+            Tanh: $\sqrt{\frac{1}{n^{[l-1]}}}$
+        \end{itemize}
+        \item Gradient checking
+        \begin{itemize}
+            \item Gradient checking verify if you computed the gradients properly. It checks the closeness between the gradients (via backpropagation) and the gradients (via numerical approximation using forward propagation).
+            \item Only use it to make sure your code is correct.
+            \item $gradapprox = \frac{\partial J}{\partial \theta}=\lim_{\epsilon \to 0} \frac{J(\theta + \epsilon)-J(\theta - \epsilon)}{2 \epsilon}$ \\
+            $difference = \frac{||grad - gradapprox||_{2}}{||grad||_{2}+||gradapprox||_{2}}$ \\
+            If $difference < 2*10^{-7}$, then your backward propagation works fine.
+        \end{itemize}
+    \end{itemize}
+    \item Optimization Algorithms
+    \begin{itemize}
+        \item Mini-batch - partition examples into mini batches and use them to compute the parameters. Get advantage of vectorization and faster convergence
+        \item Stochastic gradient descent - special case where mini-batch size = 1
+        \item Epoch - one pass through the training set
+        \item For large datasets, mini-batch runs faster than batch gradient descent
+        \item Ideal size
+        \begin{itemize}
+            \item if $<=$ 2,000 examples, use batch gradient descent
+            \item mini-batch sizes are a power of 2 (i.e. 64, 128, 256, ...) to take advantage of how ram is layed out in hardware
+            \item make sure mini-batch size fits in cpu/gpu memory
+        \end{itemize}
+        \item Implementation \\
+            \begin{lstlisting}
+                for t = 1,...,num_batches:
+                    forward prop on $X^{t}$ (vectorized implementation)
+                        $Z^{[1]} = W^{[1]}X^{t}+b^{1}$
+                        $A^{[1]} = g^{[1]}(Z^{[1]})$
+                        $.$
+                        $.$
+                        $A^{[L]} = g^{[L]}(Z^{[L]})$
+                    compute cost 
+                        $J^{t}=\frac{1}{batchsize}\sum_{i=1}^{l}\mathcal{L}(\hat{y}^{(i)},y^{(i)})+\frac{\lambda}{2*batchsize}\sum_{i=1}^{l}||W^{[l]}||^{2}_{F}$
+                    back prop to compute gradients
+                    update parameters
+                        $W^{[l]}:=W^{[l]}-\alpha\partial W^{[l]}$
+                        $b^{[l]}:=b^{[l]}-\alpha\partial b^{[l]}$   
+            \end{lstlisting}
+        \item Gradient descent with momentum
+        \begin{itemize}
+            \item Exponentially weighted average (momentum)
+            \begin{itemize}
+                \item $\beta$ is our smoothening parameter (i.e. $\beta$ = 0.9 is averaging our loss over 10 gradients)
+                \item But this works bad for initial few examples. You can do better if you divide by $1-\beta^{t}$
+                \item $v_{t} = \beta*v_{t-1}+(1-\beta)\theta_{t}$
+                \item $v_{dW^{[l]}}=\beta*v_{dW^{[l]}}+(1-\beta)dW^{[l]}$ \\
+                $W^{[l]} := W^{[l]}-\alpha*v_{dW^{[l]}}$
+                \item $v_{db^{[l]}}=\beta*v_{db^{[l]}}+(1-\beta)db^{[l]}$ \\
+                $b^{[l]} := b^{[l]}-\alpha*v_{db^{[l]}}$
+            \end{itemize}
+            \item RMS Prop 
+            \begin{itemize}
+                \item Adapt learning rate based on moving average of squared gradients
+                \item $S_{dW}=\beta*S_{dW} + (1-\beta)dW^{2}$ \\
+                $S_{db}=\beta*S_{db} + (1-\beta)db^{2}$ \\
+                $W := W-\alpha\frac{\partial dW}{\sqrt{S_{dW}}}$ \\
+                $b := b-\alpha\frac{\partial db}{\sqrt{S_{db}}}$
+            \end{itemize}
+            \item Adam 
+            \begin{itemize}
+                \item Combines momentum (moving average of the first gradient) with RMS prop (moving average of the squared gradient) 
+                \includegraphics[height=0.5\linewidth]{adam-algorithm}
+
+            \end{itemize}
+            \item Learning rate decay - lower the learning rate as you get closer to the minima. One variation is below \\
+            $\alpha = \frac{1}{1+decayrate*epochnum}*\alpha_{0}$
+            \item Learning rate decay controls the step size while momentum controls the direction of the steps taken by the optimizer
+            \includegraphics[height=0.15\linewidth]{optima_graph}
+
+            \item In a high dimensional space, most optima are saddle points, so you will not get stuck in local optima. However, plateaus are a problem and the gradient may become very close to 0 and learning will be very slow. This is where momentum, rms prop, or adam can help.
+        \end{itemize}
+        \item Hyperparameter tuning
+        \begin{itemize}
+            \item Try random values: don't use a grid. Focus more resources on searching in a fine focused region.
+            \item Appropriately scale for hyperparameters (i.e. scale is wide, consider log scale). This is especially true for exponentially weighted averages (i.e. $\beta$)
+        \end{itemize}
+        \item Batch normalization
+        \begin{itemize}
+            \item Normalizing the units in the hidden layers to speed up the learning
+            \item Want to avoid normalizing hidden units to have $\mu=0$ and $\sigma=1$ so that model can learn non-linearity. Ensure hidden units have standardized mean and variance controlled by $\gamma$ and $\beta$ \\
+            \includegraphics[height=0.5\linewidth]{batch_norm}
+
+            \item Slight regularization effect: makes units in later hidden units more robust to changes in earlier input and/or hidden layers.
+            \item What $\mu$ and $\sigma$ do we use for testing? Both parameters are estimated using an exponentially weighted average across mini-batches used during training.
+        \end{itemize}
+        \item Softmax regression
+        \begin{itemize}
+            \item Generalizes logistic regression to multiple classes
+            \includegraphics[height=0.2\linewidth]{softmax_nn}
+
+            \item Activation function: \\
+            $t = e^{z^{[L]}}$ \\
+            $a^{[L]} = \frac{e^{z^{[L]}}}{\sum_{j=1}^{c}t_{j}}$
+            \item Loss: $\mathcal{L}(\hat{y},y) = -\sum_{j=1}^{c}y_{j}log\hat{y}_{j}$
+            \item Cost: $J(w^{[1]},b^{[1]},...)=\frac{1}{m}\sum_{i=1}^{m}\mathcal{L}(\hat{y}^{(i)},y^{(i)})$
+        \end{itemize}
+    \end{itemize}
+\end{itemize}

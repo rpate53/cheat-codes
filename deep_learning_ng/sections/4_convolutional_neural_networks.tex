@@ -1,0 +1,95 @@
+\graphicspath{{./images/}}
+\titleformat{\section}
+    {\normalfont\fontfamily{phv}\fontsize{9}{0}\bfseries}{\thesection}{1em}{}
+    \section{Convolutional Neural Networks}
+\renewcommand\labelitemi{{\boldmath$\cdot$}}
+\setlist{nolistsep}
+\begin{itemize}[noitemsep]
+    \item \textbf{4.1 Introduction}
+    \begin{itemize}
+        \item Convolutional layer
+        \begin{itemize}
+            \item Valid convolution - combining two functions to form a third function, padding is 0.
+            \item Edge Detection - when you have bright pixels on the left and dark pixels on the right
+            \includegraphics[height=0.3\linewidth]{convolution_edge_detection}
+
+            \item Color scale is [0, 255]. \\
+            255 - most intense color, 0 - least intense color
+            \item Padding - Add additional rows/columns to make the output size the same as the input size 
+            \item Mathematicians call the above cross-correlation because true convolution includes a flip operation. But in practice, we don't flip the filter.
+            \item Output size: \\
+            $(n,n,n_{c}) * (f,f,n_{c})->(\lfloor \frac{n+2p-f}{s}+1 \rfloor, \lfloor \frac{n+2p-f}{s}+1 \rfloor, n_{c}^{'})$ \\
+            where $n$ is height, $f$ is width, $p$ is padding, $s$ is stride, $n_{c}$ is number of channels, $n_{c}^{'}$ is  number of filters.
+            \item Convolution is critical because it extracts features from an image by applying filters that slide across the image, effectively identifying important patterns like edges, textures, and corners at different locations in the image, which is key to understanding spatial relationships between pixels
+        \end{itemize}
+        \item Pooling layer
+        \begin{itemize}
+            \item Max Pooling - take the maximum value in the filter. High values mean the network has detected a particular feature in that quadrant in the image.
+            \item Hyperparameters: $f - filter size, s - stride$ 
+            \item Most commonly use max pooling with no padding
+        \end{itemize}
+        \includegraphics[height=0.5\linewidth]{LeNet-5}
+
+    \end{itemize}
+    \item \textbf{4.2 Case Studies}
+    \begin{itemize}
+        \item LeNet-5 
+        \begin{itemize}
+            \item 60,000 parameters
+            \item $n_{H} \downarrow, n_{W} \downarrow, n_{C}\uparrow$
+        \end{itemize}
+        \item AlexNet 
+        \begin{itemize}
+            \item Similar to LeNet, but much bigger and deeper. 60 million parameters.
+            \item Used ReLU activation and multiple GPUs to train the model.
+        \end{itemize}
+        \item VGG-16
+        \begin{itemize}
+            \item 16 layers that have weights. 138 million parameters
+            \item Simplified neural network architecture to have \textbf{same combination of CONV and POOL layers}. Thereby reducing the number of hyperparameters to specify ahead of time
+            \item CONV = 3x3 filter, s = 1, same padding
+            \item MAX-POOL = 2x2 filter, s = 2
+        \end{itemize}
+        \item ResNet
+        \begin{itemize}
+            \item Uses skip connections (aka residual blocks) to \textbf{train very deep neural networks} without worrying too much about vanishing/exploding gradients
+            \item Skip connections take the activations of one layer and feed it to another layer even much deeper in the neural network
+            \includegraphics[height=0.5\linewidth]{residual_block}
+
+        \end{itemize}
+        \item 1 x 1 convolutions 
+        \begin{itemize}
+            \item 1 x 1 convolutions are used to reduce the number of channels in a layer. They are computationally efficient and do not affect the height and width of the output volume.
+        \end{itemize}
+        \item Inception network
+        \begin{itemize}
+            \item Lets you do all modules in one layer (CONV, POOL, 1x1, 5x5, ...) and then concatenate them together. This creates an inception module.
+            \includegraphics[height=0.5\linewidth]{inception_module}
+
+            \item Stacking inception modules coupled with three softmax classifiers at intermediary layers creates a regularizng effect
+            \includegraphics[height=0.5\linewidth]{inception_network}
+
+            \item Can reduce computational cost significantly by using a 1x1 convolution to create a bottleneck layer.
+        \end{itemize}
+        \item MobileNet 
+        \begin{itemize}
+            \item Computational cost = \#filter params x \#filter positions x \#filters
+            \item \textbf{Low computational cost at deployment}
+            \item Utilizes the Depthwise-separable convolution
+            \includegraphics[height=0.2\linewidth]{depthwise-separable-convolution}
+
+            \begin{itemize}
+                \item depthwise convolution - applies a single filter to each input channel, unlike a regular convolution which applies multiple filters to each input channel.
+                \item pointwise convolution - applies a 1x1 convolution to combine the outputs of the depthwise convolution.
+            \end{itemize}
+            \item MobileNet v2 uses an expansion layer to increase the number of channels before the depthwise convolution. This allows the network to learn more complex features.
+            \includegraphics[height=0.45\linewidth]{mobilenet_architecture}
+
+            \includegraphics[height=0.45\linewidth]{mobilenet_v2}
+        
+        \end{itemize}
+        \item EfficientNet - given a fixed computational budget, EfficientNet scales up all dimensions of depth, width, and resolution using a compound scaling method.
+        \includegraphics[height=0.2\linewidth]{efficientnet-architecture}
+
+    \end{itemize}
+\end{itemize}

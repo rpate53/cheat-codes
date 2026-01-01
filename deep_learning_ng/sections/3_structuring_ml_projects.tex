@@ -1,0 +1,82 @@
+\graphicspath{{./images/}}
+\titleformat{\section}
+    {\normalfont\fontfamily{phv}\fontsize{9}{0}\bfseries}{\thesection}{1em}{}
+    \section{Structuring Machine Learning Projects}
+\renewcommand\labelitemi{{\boldmath$\cdot$}}
+\setlist{nolistsep}
+\begin{itemize}[noitemsep]
+    \item Having a \textbf{single number evaluation metric} can improve decision making (i.e. F1 score for precision and recall)
+    \item If there are multiple things, pick one \textbf{optimizing metric subject to a satisfying metric} (i.e. maximize accuracy subject to $<=$ false positives)
+    \item If dev and test set are from different distributions, consider shuffling them together and partitioning into both sets (i.e. otherwise throwing darts at a bullseye that's now in another location). It's okay for the training and dev distributions to be different.
+    \item In the era of big data, the old rule of thumb of 70/30 for train/test no longer applies. The trend has been to \textbf{use more data for training and less for dev and test sets}.
+    \item \textbf{Bayes optimal error - the theoretical best possible error} - it is unachievable. Human error is a proxy for Bayes error. Compare human-level error to training error to determine if you need to reduce bias. \\
+    Avoidable bias = Training Error - Human Error.
+
+    \includegraphics[height=0.4\linewidth]{avoidable_bias}
+
+    \item Error Analysis - Look at misclassifications to understand where most of the misclassifications are coming from so you can focus your attention on that
+    \item \textbf{Build your first system quickly and then iterate}
+    \begin{itemize}
+        \item Set up dev/test set and metric
+        \item Build initial system quickly
+        \item Use Bias/Variance and Erorr Analysis to prioritize next steps
+    \end{itemize}
+    \item Data Mismatch - Algorithm does well on training data but not on dev data from a different distribution.
+    \begin{itemize}
+        \item Do manual error analysis to understand difference between training and dev/test sets
+        \item Generate more training data similar to dev sets
+    \end{itemize}
+    \includegraphics[height=0.4\linewidth]{error_analysis_tradeoff}
+
+    \item Transfer Learning
+    \begin{itemize}
+        \item Remove last layer and its weights and create new layer(s) relevant to new problem. Retrain the last few layer(s) or all if you have enough data.
+        \item Pre-training - initial training phase where model learns general features
+        \item Fine-tuning - updating weights on a pre-training model (either all or a subset of its layers)
+        \item When to use?
+        \begin{itemize}
+            \item Task A and Task B have the same input x
+            \item A lot more data for Task A than Task B
+            \item Low level features from A could be helpful for learning B
+        \end{itemize}
+    \end{itemize}
+    \item Multi-task learning 
+    \begin{itemize}
+        \item Allows you to train one neural network to do many tasks and can give better performance than if you were to do the tasks in isolation
+        \item $\mathcal{L}(\hat{y_{j}}^{(i)},y_{j}^{(i)}) = -y_{j}^{(i)}log\hat{y_{j}}^{(i)}-(1-y_{j}^{(i)})log(1-\hat{y_{j}}^{(i)})$ \\
+        $Cost = \frac{1}{m}\sum_{i=1}^{m}\sum_{j=1}^{C}\mathcal{L}(\hat{y_{j}}^{(i)},y_{j}^{(i)})$
+        \item When to use?
+        \begin{itemize}
+            \item Training on a \textbf{set of tasks} that could benefit from having shared lower-level features
+            \item Usually amount of data you have for each task is quite similar
+            \item Can training a big enough neural network to do well on all of the tasks
+        \end{itemize}
+    \end{itemize}
+    \item Transfer Learning is used a lot more than Multi-task Learning (computer vision is the one major exception)
+    \item End-to-end Deep Learning
+    \begin{itemize}
+        \item Several data processing systems require multiple stages of processing. End-to-end deep learning takes all of those stages and replaces it with a single neural network. \textbf{Not always useful}
+        \item Not work well \\
+        - Face recognition \\
+        \includegraphics[height=0.5\linewidth]{end-to-end_face_recognition}
+
+        - Image of skeleton to predict age of person \\
+        \includegraphics[height=0.3\linewidth]{skeleton_to_age}
+
+        - Autonomous driving \\ 
+        \includegraphics[height=0.13\linewidth]{end-to-end_autnomous_driving}
+
+        \item Works well - machine translation
+        \includegraphics[height=0.13\linewidth]{end-to-end_machine_translation}
+    
+        \item When to use?
+        \begin{itemize}
+            \item Pros: \\
+            - Let the data speak \\
+            - Less hand-designing of components needed 
+            \item Cons: \\
+            - May need large amount of data \\ 
+            - Excludes potentially useful hand-designed components
+        \end{itemize}
+    \end{itemize}
+\end{itemize}

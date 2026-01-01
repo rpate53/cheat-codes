@@ -1,0 +1,647 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.7)  6 MAR 2025 20:41
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**c:/Users/Riten/Documents/software/cheat-codes/deep_learning_ng/deep_learning_ng_cheatsheet.tex
+(c:/Users/Riten/Documents/software/cheat-codes/deep_learning_ng/deep_learning_ng_cheatsheet.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-04-29> (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/tools\bm.sty
+Package: bm 2021/04/25 v1.2e Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup4
+\symboldletters=\mathgroup5
+\symboldsymbols=\mathgroup6
+Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
+) (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/sectsty\sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading styles
+
+
+LaTeX Warning: Command \underbar  has changed.
+               Check if current package is valid.
+
+
+LaTeX Warning: Command \underline  has changed.
+               Check if current package is valid.
+
+) (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and footers
+\f@nch@headwidth=\skip49
+\f@nch@O@elh=\skip50
+\f@nch@O@erh=\skip51
+\f@nch@O@olh=\skip52
+\f@nch@O@orh=\skip53
+\f@nch@O@elf=\skip54
+\f@nch@O@erf=\skip55
+\f@nch@O@olf=\skip56
+\f@nch@O@orf=\skip57
+) (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
+Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
+\c@tracingmulticols=\count193
+\mult@box=\box50
+\multicol@leftmargin=\dimen139
+\c@unbalance=\count194
+\c@collectmore=\count195
+\doublecol@number=\count196
+\multicoltolerance=\count197
+\multicolpretolerance=\count198
+\full@width=\dimen140
+\page@free=\dimen141
+\premulticols=\dimen142
+\postmulticols=\dimen143
+\multicolsep=\skip58
+\multicolbaselineskip=\skip59
+\partial@page=\box51
+\last@line=\box52
+\maxbalancingoverflow=\dimen144
+\mult@rightbox=\box53
+\mult@grightbox=\box54
+\mult@firstbox=\box55
+\mult@gfirstbox=\box56
+\@tempa=\box57
+\@tempa=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\c@minrows=\count199
+\c@columnbadness=\count266
+\c@finalcolumnbadness=\count267
+\last@try=\dimen145
+\multicolovershoot=\dimen146
+\multicolundershoot=\dimen147
+\mult@nat@firstbox=\box93
+\colbreak@box=\box94
+\mc@col@check@num=\count268
+) (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpage.sty
+Package: lastpage 2021/09/03 v1.2n Refers to last page's name (HMM; JPG)
+) (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2021/10/15 v2.17l AMS math features
+\@mathmargin=\skip60
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen148
+)) (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+LaTeX Info: Redefining \boldsymbol on input line 28.
+\pmbraise@=\dimen149
+) (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2021/08/26 v2.02 operator names
+)
+\inf@bad=\count269
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count270
+\leftroot@=\count271
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count272
+\DOTSCASE@=\count273
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box95
+\strutbox@=\box96
+\big@size=\dimen150
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count274
+\c@MaxMatrixCols=\count275
+\dotsspace@=\muskip16
+\c@parentequation=\count276
+\dspbrk@lvl=\count277
+\tag@help=\toks17
+\row@=\count278
+\column@=\count279
+\maxfields@=\count280
+\andhelp@=\toks18
+\eqnshift@=\dimen151
+\alignsep@=\dimen152
+\tagshift@=\dimen153
+\tagwidth@=\dimen154
+\totwidth@=\dimen155
+\lineht@=\dimen156
+\@envbody=\toks19
+\multlinegap=\skip61
+\multlinetaggap=\skip62
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2938.
+LaTeX Info: Redefining \] on input line 2939.
+) (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\enitkv@toks@=\toks21
+\labelindent=\skip63
+\enit@outerparindent=\dimen157
+\enit@toks=\toks22
+\enit@inbox=\box97
+\enit@count@id=\count281
+\enitdp@description=\count282
+) (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+ (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen158
+\ar@mcellbox=\box98
+\extrarowheight=\dimen159
+\NC@list=\toks23
+\extratabsurround=\skip64
+\backup@length=\skip65
+\ar@cellbox=\box99
+)
+\TX@col@width=\dimen160
+\TX@old@table=\dimen161
+\TX@old@col=\dimen162
+\TX@target=\dimen163
+\TX@delta=\dimen164
+\TX@cols=\count283
+\TX@ftn=\toks24
+) (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+) (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/ncctools\nccmath.sty
+Package: nccmath 2006/01/20 v1.3 Additional Math Commands (NCC)
+\NCC@fracrulewidth=\dimen165
+) (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup7
+\symAMSb=\mathgroup8
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks25
+)
+\lst@mode=\count284
+\lst@gtempboxa=\box100
+\lst@token=\toks26
+\lst@length=\count285
+\lst@currlwidth=\dimen166
+\lst@column=\count286
+\lst@pos=\count287
+\lst@lostspace=\dimen167
+\lst@width=\dimen168
+\lst@newlines=\count288
+\lst@lineno=\count289
+\lst@maxwidth=\dimen169
+ (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count290
+\lst@skipnumbers=\count291
+\lst@framebox=\box101
+) (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+ (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count292
+\Gm@cntv=\count293
+\c@Gm@tempcnt=\count294
+\Gm@bindingoffset=\dimen170
+\Gm@wd@mp=\dimen171
+\Gm@odd@mp=\dimen172
+\Gm@even@mp=\dimen173
+\Gm@layoutwidth=\dimen174
+\Gm@layoutheight=\dimen175
+\Gm@layouthoffset=\dimen176
+\Gm@layoutvoffset=\dimen177
+\Gm@dimlist=\toks27
+ (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+ (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+ (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+) (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
+Package: titlesec 2021/07/05 v2.14 Sectioning titles
+\ttl@box=\box102
+\beforetitleunit=\skip66
+\aftertitleunit=\skip67
+\ttl@plus=\dimen178
+\ttl@minus=\dimen179
+\ttl@toksa=\toks28
+\titlewidth=\dimen180
+\titlewidthlast=\dimen181
+\titlewidthfirst=\dimen182
+) (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+)
+\Gin@req@height=\dimen183
+\Gin@req@width=\dimen184
+) (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/ragged2e\ragged2e.sty
+Package: ragged2e 2021/12/15 v3.1 ragged2e Package
+
+
+LaTeX Warning: Command \@arrayparboxrestore  has changed.
+               Check if current package is valid.
+
+(C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/footmisc\footmisc.sty
+Package: footmisc 2022/03/08 v6.0d a miscellany of footnote facilities
+\FN@temptoken=\toks29
+\footnotemargin=\dimen185
+\@outputbox@depth=\dimen186
+Package footmisc Info: Declaring symbol style bringhurst on input line 695.
+Package footmisc Info: Declaring symbol style chicago on input line 703.
+Package footmisc Info: Declaring symbol style wiley on input line 712.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 723.
+Package footmisc Info: Declaring symbol style lamport* on input line 743.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 764.
+)
+\CenteringLeftskip=\skip68
+\RaggedLeftLeftskip=\skip69
+\RaggedRightLeftskip=\skip70
+\CenteringRightskip=\skip71
+\RaggedLeftRightskip=\skip72
+\RaggedRightRightskip=\skip73
+\CenteringParfillskip=\skip74
+\RaggedLeftParfillskip=\skip75
+\RaggedRightParfillskip=\skip76
+\JustifyingParfillskip=\skip77
+\CenteringParindent=\skip78
+\RaggedLeftParindent=\skip79
+\RaggedRightParindent=\skip80
+\JustifyingParindent=\skip81
+) (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+) (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-04-20 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count295
+\l__pdf_internal_box=\box103
+) (deep_learning_ng_cheatsheet.aux)
+\openout1 = `deep_learning_ng_cheatsheet.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             https://www.ctan.org/pkg/pageslts
+(lastpage)             ! on input line 67.
+\c@lstlisting=\count296
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(28.45274pt, 540.60239pt, 28.45274pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=540.60239pt
+* \textheight=731.23584pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
+* \topmargin=-41.59085pt
+* \headheight=12.0pt
+* \headsep=14.22636pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=14.22636pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count297
+\scratchdimen=\dimen187
+\scratchbox=\box104
+\nofMPsegments=\count298
+\nofMParguments=\count299
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count300
+\MPscratchDim=\dimen188
+\MPnumerator=\count301
+\makeMPintoPDFobject=\count302
+\everyMPtoPDFconversion=\toks31
+) (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package ragged2e Info: ABD: executing \RaggedRight on input line 67.
+ (sections/1_intro_to_deep_learning.tex
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 4.
+ (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
+File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 7.
+ (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 7.
+ (C:\Users\Riten\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+<./images//1_simple_nn.png, id=1, 761.84625pt x 406.51875pt>
+File: ./images//1_simple_nn.png Graphic file (type png)
+<use ./images//1_simple_nn.png>
+Package pdftex.def Info: ./images//1_simple_nn.png  used on input line 10.
+(pdftex.def)             Requested size: 238.9366pt x 127.49678pt.
+<./images//3_logistic_notation.png, id=3, 711.4078pt x 365.86688pt>
+File: ./images//3_logistic_notation.png Graphic file (type png)
+<use ./images//3_logistic_notation.png>
+Package pdftex.def Info: ./images//3_logistic_notation.png  used on input line 41.
+(pdftex.def)             Requested size: 247.91093pt x 127.49678pt.
+<./images//gradient_descent.png, id=4, 289.08pt x 177.66376pt>
+File: ./images//gradient_descent.png Graphic file (type png)
+<use ./images//gradient_descent.png>
+Package pdftex.def Info: ./images//gradient_descent.png  used on input line 52.
+(pdftex.def)             Requested size: 198.71112pt x 122.1218pt.
+<./images//computation_graph_logistic.png, id=5, 659.46375pt x 280.04625pt>
+File: ./images//computation_graph_logistic.png Graphic file (type png)
+<use ./images//computation_graph_logistic.png>
+Package pdftex.def Info: ./images//computation_graph_logistic.png  used on input line 61.
+(pdftex.def)             Requested size: 258.81996pt x 109.90887pt.
+
+Overfull \hbox (14.57635pt too wide) in paragraph at lines 61--62
+[][]  
+ []
+
+<./images//simd_graphic.jpg, id=6, 330.48468pt x 171.64125pt>
+File: ./images//simd_graphic.jpg Graphic file (type jpg)
+<use ./images//simd_graphic.jpg>
+Package pdftex.def Info: ./images//simd_graphic.jpg  used on input line 70.
+(pdftex.def)             Requested size: 235.1349pt x 122.1218pt.
+<./images//sigmoid_function.png, id=7, 853.1875pt x 391.4625pt>
+File: ./images//sigmoid_function.png Graphic file (type png)
+<use ./images//sigmoid_function.png>
+Package pdftex.def Info: ./images//sigmoid_function.png  used on input line 90.
+(pdftex.def)             Requested size: 266.15176pt x 122.1218pt.
+
+Overfull \hbox (21.90816pt too wide) in paragraph at lines 90--90
+[][]  
+ []
+
+[1{C:/Users/Riten/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
+
+ <./images//1_simple_nn.png> <./images//3_logistic_notation.png> <./images//gradient_descent.png> <./images//computation_graph_logistic.png> <./images//simd_graphic.jpg> <./images//sigmoid_function.png>]
+<./images//tanh_function.png, id=29, 696.6025pt x 483.8075pt>
+File: ./images//tanh_function.png Graphic file (type png)
+<use ./images//tanh_function.png>
+Package pdftex.def Info: ./images//tanh_function.png  used on input line 94.
+(pdftex.def)             Requested size: 175.82962pt x 122.1218pt.
+<./images//relu_function.png, id=30, 569.12625pt x 502.87875pt>
+File: ./images//relu_function.png Graphic file (type png)
+<use ./images//relu_function.png>
+Package pdftex.def Info: ./images//relu_function.png  used on input line 97.
+(pdftex.def)             Requested size: 138.20834pt x 122.1218pt.
+) (sections/2_improving_deep_neural_networks.tex
+<./images//regularization_tanh.png, id=31, 308.65312pt x 133.24782pt>
+File: ./images//regularization_tanh.png Graphic file (type png)
+<use ./images//regularization_tanh.png>
+Package pdftex.def Info: ./images//regularization_tanh.png  used on input line 31.
+(pdftex.def)             Requested size: 217.04472pt x 93.69649pt.
+<./images//early_stopping.png, id=32, 351.56343pt x 292.09125pt>
+File: ./images//early_stopping.png Graphic file (type png)
+<use ./images//early_stopping.png>
+Package pdftex.def Info: ./images//early_stopping.png  used on input line 50.
+(pdftex.def)             Requested size: 140.97156pt x 117.1224pt.
+ [2 <./images//tanh_function.png> <./images//relu_function.png> <./images//regularization_tanh.png>]
+<./images//normalization.png, id=41, 715.17188pt x 165.61874pt>
+File: ./images//normalization.png Graphic file (type png)
+<use ./images//normalization.png>
+Package pdftex.def Info: ./images//normalization.png  used on input line 61.
+(pdftex.def)             Requested size: 202.29832pt x 46.84824pt.
+<./images//adam-algorithm.png, id=42, 297.11pt x 207.77625pt>
+File: ./images//adam-algorithm.png Graphic file (type png)
+<use ./images//adam-algorithm.png>
+Package pdftex.def Info: ./images//adam-algorithm.png  used on input line 132.
+(pdftex.def)             Requested size: 161.91946pt x 113.23386pt.
+<./images//optima_graph.png, id=43, 530.73282pt x 93.34875pt>
+File: ./images//optima_graph.png Graphic file (type png)
+<use ./images//optima_graph.png>
+Package pdftex.def Info: ./images//optima_graph.png  used on input line 138.
+(pdftex.def)             Requested size: 199.76126pt x 35.13528pt.
+
+Underfull \hbox (badness 6641) in paragraph at lines 137--139
+\OT1/cmr/m/n/10 of the steps taken by the op-ti-mizer 
+ []
+
+[3 <./images//early_stopping.png> <./images//normalization.png> <./images//adam-algorithm.png> <./images//optima_graph.png>]
+<./images//batch_norm.png, id=52, 388.45125pt x 465.74pt>
+File: ./images//batch_norm.png Graphic file (type png)
+<use ./images//batch_norm.png>
+Package pdftex.def Info: ./images//batch_norm.png  used on input line 151.
+(pdftex.def)             Requested size: 97.68158pt x 117.1224pt.
+<./images//softmax_nn.png, id=53, 719.68875pt x 168.63pt>
+File: ./images//softmax_nn.png Graphic file (type png)
+<use ./images//softmax_nn.png>
+Package pdftex.def Info: ./images//softmax_nn.png  used on input line 159.
+(pdftex.def)             Requested size: 199.94112pt x 46.84824pt.
+) (sections/3_structuring_ml_projects.tex
+<./images//avoidable_bias.png, id=54, 756.57657pt x 317.68687pt>
+File: ./images//avoidable_bias.png Graphic file (type png)
+<use ./images//avoidable_bias.png>
+Package pdftex.def Info: ./images//avoidable_bias.png  used on input line 15.
+(pdftex.def)             Requested size: 242.906pt x 101.99586pt.
+<./images//error_analysis_tradeoff.png, id=55, 426.09187pt x 179.16937pt>
+File: ./images//error_analysis_tradeoff.png Graphic file (type png)
+<use ./images//error_analysis_tradeoff.png>
+Package pdftex.def Info: ./images//error_analysis_tradeoff.png  used on input line 29.
+(pdftex.def)             Requested size: 242.5628pt x 101.99586pt.
+ [4 <./images//batch_norm.png> <./images//softmax_nn.png> <./images//avoidable_bias.png> <./images//error_analysis_tradeoff.png>]
+<./images//end-to-end_face_recognition.png, id=63, 417.81094pt x 397.485pt>
+File: ./images//end-to-end_face_recognition.png Graphic file (type png)
+<use ./images//end-to-end_face_recognition.png>
+Package pdftex.def Info: ./images//end-to-end_face_recognition.png  used on input line 61.
+(pdftex.def)             Requested size: 128.36612pt x 122.1218pt.
+<./images//skeleton_to_age.png, id=64, 218.31563pt x 70.76437pt>
+File: ./images//skeleton_to_age.png Graphic file (type png)
+<use ./images//skeleton_to_age.png>
+Package pdftex.def Info: ./images//skeleton_to_age.png  used on input line 64.
+(pdftex.def)             Requested size: 226.07683pt x 73.27382pt.
+<./images//end-to-end_autnomous_driving.png, id=65, 481.8pt x 73.77562pt>
+File: ./images//end-to-end_autnomous_driving.png Graphic file (type png)
+<use ./images//end-to-end_autnomous_driving.png>
+Package pdftex.def Info: ./images//end-to-end_autnomous_driving.png  used on input line 67.
+(pdftex.def)             Requested size: 207.3611pt x 31.75285pt.
+<./images//end-to-end_machine_translation.png, id=66, 702.37407pt x 95.6072pt>
+File: ./images//end-to-end_machine_translation.png Graphic file (type png)
+<use ./images//end-to-end_machine_translation.png>
+Package pdftex.def Info: ./images//end-to-end_machine_translation.png  used on input line 70.
+(pdftex.def)             Requested size: 233.27386pt x 31.75285pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--71
+[]\OT1/cmr/m/n/10 Works well - ma-chine trans-la-tion 
+ []
+
+) (sections/4_convolutional_neural_networks.tex
+<./images//convolution_edge_detection.png, id=67, 762.59906pt x 377.15906pt>
+File: ./images//convolution_edge_detection.png Graphic file (type png)
+<use ./images//convolution_edge_detection.png>
+Package pdftex.def Info: ./images//convolution_edge_detection.png  used on input line 14.
+(pdftex.def)             Requested size: 142.09097pt x 70.27415pt.
+<./images//LeNet-5.png, id=68, 791.95876pt x 426.09187pt>
+File: ./images//LeNet-5.png Graphic file (type png)
+<use ./images//LeNet-5.png>
+Package pdftex.def Info: ./images//LeNet-5.png  used on input line 31.
+(pdftex.def)             Requested size: 226.97945pt x 122.1218pt.
+<./images//residual_block.png, id=69, 796.47563pt x 412.54124pt>
+File: ./images//residual_block.png Graphic file (type png)
+<use ./images//residual_block.png>
+Package pdftex.def Info: ./images//residual_block.png  used on input line 57.
+(pdftex.def)             Requested size: 226.12288pt x 117.1224pt.
+ [5 <./images//end-to-end_face_recognition.png> <./images//skeleton_to_age.png> <./images//end-to-end_autnomous_driving.png> <./images//end-to-end_machine_translation.png> <./images//convolution_edge_detection.png> <./images//LeNet-5.png>]
+<./images//inception_module.png, id=79, 871.75688pt x 484.81125pt>
+File: ./images//inception_module.png Graphic file (type png)
+<use ./images//inception_module.png>
+Package pdftex.def Info: ./images//inception_module.png  used on input line 67.
+(pdftex.def)             Requested size: 210.59602pt x 117.1224pt.
+<./images//inception_network.png, id=80, 592.46344pt x 291.33844pt>
+File: ./images//inception_network.png Graphic file (type png)
+<use ./images//inception_network.png>
+Package pdftex.def Info: ./images//inception_network.png  used on input line 70.
+(pdftex.def)             Requested size: 238.17448pt x 117.1224pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--71
+\OT1/cmr/m/n/10 lay-ers cre-ates a reg-u-lar-izng ef-fect 
+ []
+
+
+Overfull \hbox (3.92966pt too wide) in paragraph at lines 69--71
+[]  
+ []
+
+<./images//depthwise-separable-convolution.png, id=81, 723.45282pt x 158.09062pt>
+File: ./images//depthwise-separable-convolution.png Graphic file (type png)
+<use ./images//depthwise-separable-convolution.png>
+Package pdftex.def Info: ./images//depthwise-separable-convolution.png  used on input line 79.
+(pdftex.def)             Requested size: 214.37712pt x 46.84824pt.
+<./images//mobilenet_architecture.png, id=82, 870.25125pt x 456.95718pt>
+File: ./images//mobilenet_architecture.png Graphic file (type png)
+<use ./images//mobilenet_architecture.png>
+Package pdftex.def Info: ./images//mobilenet_architecture.png  used on input line 86.
+(pdftex.def)             Requested size: 200.73785pt x 105.40945pt.
+<./images//mobilenet_v2.png, id=83, 897.3525pt x 411.78844pt>
+File: ./images//mobilenet_v2.png Graphic file (type png)
+<use ./images//mobilenet_v2.png>
+Package pdftex.def Info: ./images//mobilenet_v2.png  used on input line 88.
+(pdftex.def)             Requested size: 229.70502pt x 105.40945pt.
+<./images//efficientnet-architecture.png, id=84, 797.98125pt x 158.09062pt>
+File: ./images//efficientnet-architecture.png Graphic file (type png)
+<use ./images//efficientnet-architecture.png>
+Package pdftex.def Info: ./images//efficientnet-architecture.png  used on input line 92.
+(pdftex.def)             Requested size: 246.55582pt x 48.84796pt.
+
+Overfull \hbox (2.31221pt too wide) in paragraph at lines 91--93
+[]  
+ []
+
+) [6 <./images//residual_block.png> <./images//inception_module.png> <./images//inception_network.png> <./images//depthwise-separable-convolution.png> <./images//mobilenet_architecture.png> <./images//mobilenet_v2.png> <./images//efficientnet-architecture.png>] 
+AED: lastpage setting LastPage
+(deep_learning_ng_cheatsheet.aux) ) 
+Here is how much of TeX's memory you used:
+ 7480 strings out of 478619
+ 118240 string characters out of 2843246
+ 654333 words of memory out of 3000000
+ 25520 multiletter control sequences out of 15000+600000
+ 477316 words of font info for 50 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 55i,13n,62p,493b,1596s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\Riten\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk>{C:/Users/Riten/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Riten/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/Users/Riten/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Riten/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Riten/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/Riten/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Riten/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Riten/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Riten/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Riten/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Riten/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Riten/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Riten/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/Riten/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Riten/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb>
+Output written on deep_learning_ng_cheatsheet.pdf (6 pages, 2814831 bytes).
+PDF statistics:
+ 158 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 151 words of extra memory for PDF output out of 10000 (max. 10000000)
+
